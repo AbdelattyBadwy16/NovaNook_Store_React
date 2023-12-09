@@ -6,3 +6,4 @@ For client accounts, these features are available. However, for admin accounts, 
 In the future, I plan to add more features to the project.
 
 For the implementation, I'm using React, React Redux, various hooks and custom hooks , and tailwind in the frontend. In the backend, I'm utilizing Supabase to create a complete database and manage authentication.
+and you can see live demo we can click here https://novanookstore.netlify.app/ .
