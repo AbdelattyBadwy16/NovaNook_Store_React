@@ -20,10 +20,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path='/login' element={<Login></Login>}></Route>
-      <Route path='/signin' element={<Signin></Signin>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/signin' element={<Signin></Signin>}></Route>
         <Route element={<AppLayout></AppLayout>}>
-        <Route index element={<Navigate replace to="/login" />} />
+          <Route index element={<Navigate replace to="/login" />} />
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/items/:id' element={<Items></Items>}></Route>
           <Route path='/item/:id' element={<Item />}></Route>
