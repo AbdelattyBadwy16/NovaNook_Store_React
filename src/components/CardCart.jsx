@@ -1,18 +1,13 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router';
 import { deleteItem } from '../features/cart/cartSlice';
 
 export default function CardCart({ item, count ,i}) {
     const { image, name, id, price } = item;
-    const navigate = useNavigate();
-    function handleClick() {
-        navigate(`/item/${id}`);
-    }
     const dispatch = useDispatch();
     return (
 
-        <div className='flex justify-between lg:flex-row flex-col items-center lg:w-[80%] w-[80%] lg:border-0 border-2 border-black mt-5 mb-5 m-auto'>
+        <div className='flex text-center justify-between lg:flex-row flex-col items-center lg:w-[80%] w-[80%] lg:border-0 border-2 border-black mt-5 mb-5 p-5 m-auto'>
             <div>
                 <p>{i}-</p>
             </div>
@@ -31,7 +26,7 @@ export default function CardCart({ item, count ,i}) {
             <div className='lg:w-[20%] lg:mb-0 mb-5'>
                 <h4 className='text-[#088178] '>{price * count}$</h4>
             </div>
-            <div  className='border-2 lg"w-[15%] lg:mb-0 mb-5 lg:p-1 text-[#088178] text-center hover:bg-[#088178]  rounded-md w-[30%]'>
+            <div  className='border-2 lg:mb-0 mb-5 lg:p-1 text-[#088178] w-auto text-center hover:bg-[#088178]  rounded-md p-3'>
                 <button onClick={() => dispatch(deleteItem(id))} className='text-xl hover:text-gray-50'>Delete Item</button>
             </div>
         </div>

@@ -37,7 +37,7 @@ export default function CreateItem() {
 
     return (
         <div className='flex flex-col items-center justify-center m-20'>
-            <form className=' shadow-2xl bg-[#E3E6F3] rounded-lg text-blue-500 p-10' onSubmit={handleSubmit}>
+            <form className='inp shadow-2xl bg-[#E3E6F3] rounded-lg text-blue-500 p-10' onSubmit={handleSubmit}>
                 <h1 className='font-bold text-[50px] uppercase mb-5'>Add New Items...</h1>
                 <div className='m-5 flex items-center justify-between'>
                     <label className='font-bold mr-5'>name : </label>

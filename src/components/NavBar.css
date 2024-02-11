@@ -1,0 +1,30 @@
+@media screen and (max-width: 500px) {
+
+    .navbar{
+        font-size: 15px;
+        padding-left: 20px !important;
+    }
+
+    .logo{
+        font-size: 10px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .navbar{
+        font-size: 15px;
+        padding-left: 20px !important;
+    }
+
+    .logo{
+        font-size: 10px !important;
+    }
+
+    .order{
+        display: none;
+    }
+
+}

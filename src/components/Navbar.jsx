@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router'
-import { clearCart, getCart, getCartLength } from '../features/cart/cartSlice';
+import { useNavigate } from 'react-router'
+import { clearCart, getCart} from '../features/cart/cartSlice';
 import { addEmail, addName, addPassword, addPhone, addSearch, getName } from '../features/user/userSlice';
 import { fetchItems } from '../features/apiSupaBase';
+import "./NavBar.css";
 export default function Navbar() {
   const cart = useSelector(getCart);
   const navigate = useNavigate();
@@ -11,8 +12,6 @@ export default function Navbar() {
   const [term, setTerm] = useState();
   const [data, setData] = useState();
   const isAdmin = (localStorage.getItem('email') != "" && localStorage.getItem('email') != "admin@test.com");
-  const id = useParams();
-  console.log(id);
   function handleClick() {
     navigate("/cart");
   }
@@ -42,7 +41,6 @@ export default function Navbar() {
       }
       return ok;
     })
-    console.log(newRes);
     setData(newRes);
     dispatch(addSearch(newRes));
     navigate("/items/100")
@@ -50,9 +48,9 @@ export default function Navbar() {
 
 
   return (
-    <nav className='h-[80px] flex justify-between items-center p-10 w-full z-50 top-0 border-b-2 sticky ' style={{ backgroundColor: '#E3E6F3', boxShadow: '0 5px 15px rgb(0,0,0,0.06)' }}>
+    <nav className='navbar h-[80px] flex justify-between items-center p-10 w-[100%] z-50 top-0 border-b-2 sticky ' style={{ backgroundColor: '#E3E6F3', boxShadow: '0 5px 15px rgb(0,0,0,0.06)' }}>
       <div className=' italic w-[25%] flex justify-between items-center' onClick={() => { if (isAdmin) navigate(`${name == "admin" ? "dashbord" : "home"}`) }} >
-        <p className='font-bold text-[20px]'><span className='text-[30px]  text-[#088178]'>N</span>ovaNook Store</p>
+        <p className='logo font-bold text-[20px]'><span className='text-[30px]  text-[#088178]'>N</span>ovaNook Store</p>
       </div>
 
 
@@ -74,7 +72,7 @@ export default function Navbar() {
               {
                 !isAdmin ?
                   <div className='flex'>
-                    <li onClick={() => navigate("/dashbord")} className='mr-5 hover:text-blue-500'>Dashbord</li>
+                    <li onClick={() => navigate("/dashbord")} className='mr-2 hover:text-blue-500'>Dashbord</li>
                     <li onClick={() => navigate("/home")} className='mr-2 hover:text-blue-500'>Home</li> </div> : ""
               }
             </ul>
@@ -83,7 +81,7 @@ export default function Navbar() {
           </div>
       }
       <div className='flex items-center'>
-        <img onClick={() => { navigate("/orders") }} src="/order.webp" alt="icon" className=' md:w-[50px] w-[30px] mr-10 rounded-full cursor-pointer'></img>
+        <img onClick={() => { navigate("/orders") }} src="/order.webp" alt="icon" className='order md:w-[50px] w-[30px] mr-10 rounded-full cursor-pointer'></img>
         <img onClick={handleClick} className='cursor-pointer md:w-[50px] w-[30px] mr-3' src="/cart.png" alt="icon" ></img>
 
         <p>{cart.cart.length ? len.cartLength : ""}</p>

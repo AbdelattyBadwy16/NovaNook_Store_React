@@ -27,7 +27,7 @@ export default function GetOrder() {
   }
   const dd = new Date();
   return (
-    <div className='p-10  bg-[#E3E6F3] shadow-2xl border-sloid rounded-sm m-10 w-[60%] ml-auto mr-auto'>
+    <div className='p-10  bg-[#E3E6F3] shadow-2xl border-sloid rounded-sm m-10 w-full ml-auto mr-auto'>
 
       <div className='flex lg:flex-row flex-col justify-between items-center'>
         <div className='w-[40%]'>
@@ -93,7 +93,7 @@ export default function GetOrder() {
           <lable>Client : </lable>
           <input disabled type='text' value={name} className='border-b-2 font-Ephesis text-[30px] border-black bg-[#E3E6F3]' style={{fontFamily:"Ephesis"}}></input>
         </div>
-        <button onClick={handleClick} className='bg-[#E3E6F3] text-red-800 p-3 rounded-md hover:scale-[1.1]'>Order Now</button>
+        <button onClick={handleClick} className='bg-[#E3E6F3] text-red-800 p-3 rounded-md hover:scale-[1.1] mt-10 font-bold'>Order Now</button>
       </div>
      
     </div>

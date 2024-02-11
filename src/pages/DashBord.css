@@ -1,0 +1,29 @@
+.cont{
+    overflow-x: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 524px) {
+  
+    .st{
+        display: none;
+    }
+    .title{
+        font-size: 20px !important;
+    }
+
+    .inp{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 364px) {
+  
+
+    .inp{
+        width: 300px;
+        font-size: 10px;
+    }
+
+}

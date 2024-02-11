@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px) {
+
+    .parentDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .parentDiv img {
+        display: none;
+    }
+
+    .form {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .form {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        font-size: 15px;
+        width: 300px;
+    }
+
+}

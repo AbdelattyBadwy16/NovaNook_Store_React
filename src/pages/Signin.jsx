@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { getUserEmail, signin } from '../features/apiAuth';
 import { insertUserData } from '../features/apiSupaBase';
+import './Signin.css';
 
 export default function Signin() {
   const [user, setUser] = useState("");
@@ -33,9 +34,9 @@ export default function Signin() {
 
   return (
     <div className='flex flex-col items-center justify-center w-[100%] h-[100vh] bg-blue-400 '>
-      <div className='flex md:flex-row flex-col items-center justify-center w-[100%]'>
+      <div className=' parentDiv flex md:flex-row flex-col items-center justify-center w-[100%]'>
         <img src="/login.jpg" className='w-[500px] h-[500px]'></img>
-        <form className='p-10 w-[500px] bg-gray-50 shadow-2xl flex flex-col items-center rounded-sm h-[500px]' onSubmit={handleSubmit}>
+        <form className='form p-10 w-[500px] bg-gray-50 shadow-2xl flex flex-col items-center rounded-sm h-[500px]' onSubmit={handleSubmit}>
           <h1 className='font-bold text-[30px] text-blue-500 mb-5'>Sign In To Join To Our World...</h1>
           <div className='m-5 flex items-center border-2 border-gray-200 rounded-sm w-[80%]'>
             <img src='/user.png' className='w-5 ml-3 mr-2'></img>
