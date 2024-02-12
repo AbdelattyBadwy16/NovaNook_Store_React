@@ -13,6 +13,15 @@ and you can see video demo about how project work click here :
 https://www.linkedin.com/posts/abdelatty-badwy-13b927247_%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D9%84%D9%8A%D9%83%D9%85-here-we-have-an-e-commerce-activity-7139201977678303232-W2Hq?utm_source=share&utm_medium=member_desktop .
 
 
+Here's some screenshots from the app:
+
+
+login 
+
+
+![Uploading 1.png…]()
+
+
 Register 
 
 
