@@ -6,17 +6,17 @@ for admin accounts, there is a different page where they can view all orders mad
 
 In the future, I plan to add more features to the project.
 
-For the implementation, I'm using React, React Redux, various hooks and custom hooks , and tailwind in the frontend. In the backend, I'm utilizing Supabase to create a complete database and manage authentication.
-and you can see live demo we can click here https://novanook-store.netlify.app .
+# For the implementation, I'm using React, React Redux, various hooks and custom hooks , and tailwind in the frontend. In the backend, I'm utilizing Supabase to create a complete database and manage authentication.
+# and you can see live demo we can click here https://novanook-store.netlify.app .
 
-and you can see video demo about how project work click here : 
+# and you can see video demo about how project work click here : 
 https://www.linkedin.com/posts/abdelatty-badwy-13b927247_%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D9%84%D9%8A%D9%83%D9%85-here-we-have-an-e-commerce-activity-7139201977678303232-W2Hq?utm_source=share&utm_medium=member_desktop .
 
 
-Here's some screenshots from the app:
+##### Here's some screenshots from the app:
 
 
-##login 
+### login 
 
 
 ![1](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/16f79aff-0d8f-41fe-bacc-dc33593acbb6)
