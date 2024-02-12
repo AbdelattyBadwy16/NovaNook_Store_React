@@ -19,7 +19,8 @@ Here's some screenshots from the app:
 login 
 
 
-![Uploading 1.png…]()
+
+![1](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/16f79aff-0d8f-41fe-bacc-dc33593acbb6)
 
 
 Register 
