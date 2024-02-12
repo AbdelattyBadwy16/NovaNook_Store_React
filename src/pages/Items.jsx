@@ -54,14 +54,13 @@ export default function Items() {
     dispatch(addSearch([]))
     navigte(`/items/${id}`);
   }
-  console.log(search,id)
   return (
     <>
 
       <div>
         <div className='flex w-[100%'>
-          <div className='w-[20%] p-5 pt-10 h-auto bg-[#E3E6F3]'>
-            <h1 className='font-bold'>Categories :</h1>
+          <div className='w-[35%] p-5 pt-10 h-auto bg-[#E3E6F3]'>
+            <h1 className='font-bold'>Categories:</h1>
             <ul className='list-disc'>
               {
                 Cat.map((item) => <li className='m-5 cursor-pointer uppercase hover:text-blue-500' onClick={() => handleClick(item.id)}>{item.name}</li>)
@@ -69,7 +68,7 @@ export default function Items() {
             </ul>
           </div>
           <div className='w-[70%] m-auto'>
-            <h1 className='text-[50px] font-bold text-center my-10 uppercase italic'>{search === undefined || search?.length === 0 ? catName : "search"} <span className='text-orange-500'> CATEGORY</span></h1>
+            <h1 className='text-[40px] font-bold text-center my-10 uppercase italic'>{search === undefined || search?.length === 0 ? catName : "search"} <span className='text-orange-500'> CATEGORY</span></h1>
 
             {
               isLoading ? <Spinner></Spinner> :

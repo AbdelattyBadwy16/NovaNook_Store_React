@@ -84,7 +84,7 @@ export default function Navbar() {
         <img onClick={() => { navigate("/orders") }} src="/order.webp" alt="icon" className='order md:w-[50px] w-[30px] mr-10 rounded-full cursor-pointer'></img>
         <img onClick={handleClick} className='cursor-pointer md:w-[50px] w-[30px] mr-3' src="/cart.png" alt="icon" ></img>
 
-        <p>{cart.cart.length ? len.cartLength : ""}</p>
+        <p>{cart.cart.length ? len.cartLength - 1 : ""}</p>
       </div>
     </nav>
   )

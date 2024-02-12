@@ -52,21 +52,21 @@ export default function Item() {
 
     const { image, name, description, price, rating, isDiscount, discount, amount } = data[0];
     const newPrice = price - (price * (discount / 100));
-    
+
     return (
         <>
             {isLoading ? <Spinner></Spinner> :
                 <div className='p-20 flex  w-[100%] justify-between flex-col'>
                     <div >
                         <div className='flex justify-center flex-col items-center mb-10'>
-                            <img src={image} className='w-[500px] h-[400px] mb-5 mr-5'></img>
+                            <img src={image} className='w-[500px] h-[400px] mb-5 mr-5 rounded-lg'></img>
                             <h3 className='uppercase font-bold text-[30px]'>{name}</h3>
                         </div>
                         <div>
                             <div>
                                 <div className='flex justify-between items-center'>
-                                    <p className='mb-5 text-[50px] font-bold'>Product Details :</p>
-                                    <p>amount : {amount}</p>
+                                    <p className='mb-5 text-[50px] font-bold'>Product Details:</p>
+                                    <p>amount: {amount}</p>
                                 </div>
                                 <h5 className='uppercase font-semiblod w-[100%]'>{description}</h5>
                             </div>
@@ -86,7 +86,7 @@ export default function Item() {
                             </div>
                             <div className='flex items-center'>
                                 <div>
-                                    <label>Count : </label>
+                                    <label>Count: </label>
                                     <input onChange={(e) => {
                                         if (e.target.value <= 0) setCount(1);
                                         else
@@ -98,17 +98,21 @@ export default function Item() {
                             </div>
 
                             <div>
-                                <h1 className='font-bold'>Comments :</h1>
                                 <div>
-                                    <div className='flex justify-between items-center'>
-                                        <input onChange={(e) => { setComment(e.target.value) }} value={comment} type="text" className="border-2 w-[80%] p-2 border-gray-500 rounded-sm"></input>
-                                        <input onChange={(e) => {
-                                            if (e.target.value > 5) setCount(5);
-                                            else if (e.target.value < 0) setCount(0);
-                                            else
-                                                setRate(e.target.value)
-                                        }} value={rate} className='border-2 border-gray-650 ml-5 text-gray-950 p-2 w-20' placeholder='rate' type='number'></input>
-                                        <button onClick={handelCommentSubmet} className='bg-[#088178] ml-5 text-gray-50 p-3 rounded-md'>Add Comment</button>
+                                    <div className='flex justify-between flex-col gap-5 items-center'>
+                                        <div className='flex gap-5 w-full items-center rounded-xl'>
+                                            <h1 className='font-bold'>Comments:</h1>
+                                            <input onChange={(e) => { setComment(e.target.value) }} value={comment} type="text" className="rounded-md border-2 w-[80%] p-2 border-gray-500"></input>
+                                        </div>
+                                        <div className='flex gap-5 w-full justify-start items-center '>
+                                            <input onChange={(e) => {
+                                                if (e.target.value > 5) setCount(5);
+                                                else if (e.target.value < 0) setCount(0);
+                                                else
+                                                    setRate(e.target.value)
+                                            }} value={rate} className='border-2 border-gray-650 ml-5 text-gray-950 p-2 w-20' placeholder='rate' type='number'></input>
+                                            <button onClick={handelCommentSubmet} className='bg-[#088178] ml-5 text-gray-50 p-3 rounded-md'>Add Comment</button>
+                                        </div>
                                     </div>
                                     {
                                         comments.map((item) => {

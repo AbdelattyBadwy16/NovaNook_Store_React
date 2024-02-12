@@ -47,8 +47,8 @@ export default function Login() {
   return (
     <div className='bg-blue-400 h-[100vh] flex justify-center items-center outline-none rounded-md'>
       <div className='parentDiv flex flex-row items-center justify-center outline-none bg-gray-50 rounded-lg shadow-2xl'>
-        <img src="/login.jpg" className='logImg w-[500px] h-[500px]'></img>
-        <form className='form p-5 m-10 w-[450px]' onSubmit={handleSubmit}>
+        <img src="/login.jpg" className='logImg w-[500px] h-[500px] rounded-lg'></img>
+        <form className='form flex flex-col p-10 m-10 w-[450px]' onSubmit={handleSubmit}>
           <h1 className='font-bold text-[30px] text-blue-500'>Welcome to NovaNock</h1>
           <h3 className='ppercase italic text-blue-500 mb-10'>Ship Smart Today</h3>
           <div className='m-5 flex items-center border-2 border-gray-200 rounded-sm'>

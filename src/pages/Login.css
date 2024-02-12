@@ -10,7 +10,7 @@
 @media screen and (max-width: 950px) {
 
     .parentDiv {
-        flex-direction: column;
+        flex-direction: column !important;
         padding: 0;
     }
 
@@ -19,7 +19,7 @@
 @media screen and (max-width: 500px) {
 
     .parentDiv {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .form {
