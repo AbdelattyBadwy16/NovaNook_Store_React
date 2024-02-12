@@ -14,8 +14,7 @@ const cartSlice = createSlice(
         initialState,
         reducers: {
             addItem(state, action) {
-                
-                let cart = JSON.parse(localStorage.getItem("cart"));
+                let cart = [...JSON.parse(localStorage.getItem("cart"))];
                 let flag = 0;
                 
                 for (let i = 0; i < cart.length; i++) {
@@ -44,6 +43,7 @@ const cartSlice = createSlice(
                         localStorage.setItem("length", state.cartLength);
                     }
                 }
+                console.log(state.cartLength)
                 state.cart = state.cart.filter(item => {
                     return item.item.id !== action.payload
                 })
