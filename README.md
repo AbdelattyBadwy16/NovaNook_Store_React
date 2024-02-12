@@ -19,7 +19,6 @@ Here's some screenshots from the app:
 login 
 
 
-
 ![1](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/16f79aff-0d8f-41fe-bacc-dc33593acbb6)
 
 
@@ -35,6 +34,9 @@ Home Page
 
 ![3](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/e1614e67-9f08-461a-8b63-9c1c591f0766)
 
+Category section in Home Page
+
+![page4](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/056712d1-ec1c-45fb-aa07-f04949e44874)
 
 
 New Item section in Home Page
@@ -129,4 +131,11 @@ if we return to the user account that ordered this order it will see the change
 admin also can add new Product 
 
 ![22](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/fc0eefe3-540b-4047-ab4c-55c462aec192)
+
+this is the product we add yet
+
+![23](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/e47b6464-81a7-4483-a99a-67953ce00435)
+
+![24](https://github.com/AbdelattyBadwy16/NovaNook_Store_React/assets/108571865/f61107d3-b239-4a6f-8d9b-a8683a952f63)
+
 
