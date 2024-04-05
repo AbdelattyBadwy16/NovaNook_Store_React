@@ -6,6 +6,7 @@ This is an e-commerce site. You can enter and search for the product you want in
    - can show all orders that need to done
    - can confirm any order
    - can add or delete new product
+     
   user :
    - can choose any product to add it to his card
    - can confirm buying the prodcuts in hist card
